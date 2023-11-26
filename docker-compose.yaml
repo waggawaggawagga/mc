@@ -18,6 +18,7 @@ services:
     volumes:
       - /mnt/docker_zvol/mc/data:/data
       - /mnt/docker_zvol/mc/mods.txt:/extras/mods.txt:ro
+    cpus: "1"
     deploy:
         resources:
             limits:
