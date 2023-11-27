@@ -19,10 +19,11 @@ services:
       - /mnt/docker_zvol/mc/data:/data
       - /mnt/docker_zvol/mc/mods.txt:/extras/mods.txt:ro
     cpus: "2"
+    memory: 2g
     deploy:
         resources:
             limits:
-              cpus: "2"
+              cpus: "3"
 
 #volumes:
 #  mc: {}
